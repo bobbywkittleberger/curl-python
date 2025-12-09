@@ -17,32 +17,6 @@ This tool takes a `curl` command (including HTTP method, headers, body, auth, an
 - Optional `requests.Session()` output  
 - Generates well-formatted, copy-ready code  
 
-## 📥 How to Use
-
-1. Paste your `curl` command into the input box  
-2. Adjust options if desired  
-3. Copy the auto-generated Python code  
-4. Drop it into your script and run
-
-Example:
-
-```shell
-curl -X POST https://api.example.com/login \
-     -H "Content-Type: application/json" \
-     -d '{ "username": "user", "password": "pass" }'
-
-Becomes:
-
-import requests
-
-response = requests.post(
-    "https://api.example.com/login",
-    headers={ "Content-Type": "application/json" },
-    json={ "username": "user", "password": "pass" }
-)
-
-print(response.status_code, response.text)
-
 🎯 Why Use This Tool
 
 Translating complex curl commands by hand is tedious and error-prone. This converter automates the process and produces consistent, reliable Python code — especially useful for:
@@ -72,6 +46,33 @@ Please keep code clean and documented.
 Distributed under the MIT License.
 
 ❤️ Acknowledgments
+
+## 📥 How to Use
+
+1. Paste your `curl` command into the input box  
+2. Adjust options if desired  
+3. Copy the auto-generated Python code  
+4. Drop it into your script and run
+
+Example:
+
+```shell
+curl -X POST https://api.example.com/login \
+     -H "Content-Type: application/json" \
+     -d '{ "username": "user", "password": "pass" }'
+
+Becomes:
+
+import requests
+
+response = requests.post(
+    "https://api.example.com/login",
+    headers={ "Content-Type": "application/json" },
+    json={ "username": "user", "password": "pass" }
+)
+
+print(response.status_code, response.text)
+
 
 Based on the online converter hosted at:
 https://flipperfile.com/developer-tools/curl-to-python-requests-converter/
