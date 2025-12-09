@@ -76,8 +76,3 @@ Please keep code clean and documented.
 📝 License
 
 Distributed under the MIT License.
-
-❤️ Acknowledgments
-
-Based on the online converter hosted at:
-https://flipperfile.com/developer-tools/curl-to-python-requests-converter/
