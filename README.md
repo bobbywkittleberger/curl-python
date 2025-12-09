@@ -4,6 +4,12 @@ Convert any curl command into clean, ready-to-run Python requests code. Free onl
 
 Instantly convert any `curl` command into clean Python code using the `requests` library — no manual translation needed.
 
+## ❤️ Acknowledgments
+
+This project powers the online cURL → Python Requests Converter available at:  
+https://flipperfile.com/developer-tools/curl-to-python-requests-converter/
+
+
 ## 🚀 What It Is
 
 This tool takes a `curl` command (including HTTP method, headers, body, auth, and common flags) and produces runnable Python `requests` code. Perfect for developers migrating shell-based API calls into Python automation or backend integrations.
